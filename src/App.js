@@ -117,7 +117,7 @@ function App() {
       className="roadmApText" style={{color:"white"}} data-aos="fade-up" >
         
         <div  data-aos="fade-up" 
-     data-aos-duration="3000"><span id="number">15% </span>Marketing we will begin launching additional marketing with influencers<br/>
+     data-aos-duration="3000"><span id="number">15% </span>We will begin launching additional marketing with influencers<br/>
           that are relevant and significant in the NFT space to get more eyes than ever <br/>
           on our project during and after our public sale.</div>
          <br/>
@@ -217,11 +217,11 @@ function App() {
            <div className={`${(answer==true && index==1)?'answerVisible':"anewers"}`}  data-aos="fade-down"   data-aos-easing="ease-in-sine">A : THERE ARE 6969 UNIQUE EVIL APES</div>
            
            <div onClick={()=>{questiClick(2)}} >Q : HOW MUCH IS IT TO MINT? {index==2 && answer==true?<FaSortUp/>:<FaSortDown/>}</div>
-           <div className={`${(answer==true && index==2)?'answerVisible':"anewers"}`}  data-aos="fade-down"   data-aos-easing="ease-in-sine">A : OUR WHITELIST PRESALE MINT PRICE IS <br/> 0.65 ETH PUBLIC SALE IS 0.7 ETH ?</div>
+           <div className={`${(answer==true && index==2)?'answerVisible':"anewers"}`}  data-aos="fade-down"   data-aos-easing="ease-in-sine">A : OUR WHITELIST PRESALE MINT PRICE IS <br/> 0.06 ETH PUBLIC SALE IS 0.065 ETH ?</div>
 
            
 
-           <div onClick={()=>{questiClick(3)}}>Q : HOW MUCH WILL EACH EVIL APP COST TO MINT ? {index==3 && answer==true?<FaSortUp/>:<FaSortDown/>}</div>
+           <div onClick={()=>{questiClick(3)}}>Q : HOW MUCH WILL EACH EVIL APE COST TO MINT ? {index==3 && answer==true?<FaSortUp/>:<FaSortDown/>}</div>
            <div className={`${(answer==true && index==3)?'answerVisible':"anewers"}`}  data-aos="fade-down"   data-aos-easing="ease-in-sine"> A : Our Whitelist presale mint starts <br/> March 12, 2022 at 12:00 noon EST and last <br/>for 24 hours. Our public sale <br/>starts the following<br/> day March 13, 2022 at 12:00 noon EST.</div>
            
            <div onClick={()=>{questiClick(4)}}>Q : Where can I view my Evil Ape Club NFT ? {index==4 && answer==true?<FaSortUp/>:<FaSortDown/>} </div>
