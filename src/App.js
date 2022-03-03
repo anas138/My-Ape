@@ -16,9 +16,9 @@ function App() {
   useEffect(()=>{
     AOS.init();
     console.log(window.innerWidth)
-    if(window.innerWidth <="375" ){
-      setScreen(false)
-    }
+    // if(window.innerWidth <="375" ){
+    //   setScreen(false)
+    // }
   })
   const questiClick=(number)=>{
     setAnswer(!answer)
