@@ -448,8 +448,6 @@ width: 30px;
   }
   
   .images img {
-    
-    
     top: 10px !important;
   }
   #ci{
@@ -781,14 +779,6 @@ width: 30px;
   #ci{
     height: 100px !important;
     width: 100px !important;
-  }
-
-}
-
-@media all and (max-width: 750px){
-  #ci{
-    height: 70px !important;
-    width: 70px !important;
   }
 
 }
