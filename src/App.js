@@ -11,7 +11,7 @@ import { Carousel } from 'react-responsive-carousel';
 function App() {
   const [answer,setAnswer] = useState(false)
   const[screen,setScreen] = useState()
-  const[index,setIndex] = useState()
+  const[index,setIndex] = useState(true)
   const images=["a.png","b.png","c.png","d.png","e.png","f.png","g.png","h.png","bunny.png","bunn2.png"]
   useEffect(()=>{
     AOS.init();
