@@ -4,14 +4,21 @@ import { FaDiscord,FaSortDown,FaSortUp,FaInstagram,FaTwitter } from "react-icons
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { height } from "@mui/system";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 
 function App() {
   const [answer,setAnswer] = useState(false)
+  const[screen,setScreen] = useState()
   const[index,setIndex] = useState()
   const images=["a.png","b.png","c.png","d.png","e.png","f.png","g.png","h.png","bunny.png","bunn2.png"]
   useEffect(()=>{
     AOS.init();
+    console.log(window.innerWidth)
+    if(window.innerWidth <="375" ){
+      setScreen(false)
+    }
   })
   const questiClick=(number)=>{
     setAnswer(!answer)
@@ -71,16 +78,47 @@ function App() {
      
     <div className="images">
     <h2 style={{color:"white",fontSize:"45px",marginTop:"10px"}} className="gh">My Gallery</h2>
-          <div>
-          <img src="1.png" style={{position:"relative",bottom:"125px"}}/>
-          <img src="galler-2.png" style={{width:"320px",height:"390px"}} />
-          <img src="3.png"  style={{position:"relative"}} id="gimage"/>
-          </div>
-          <div>
-          <img src="gallery-1.png" style={{position:"relative",bottom:"125px"}}/>
-          <img src="5.png" style={{position:"relative",bottom:"125px"}}/>
-          <img src="6.png" style={{position:"relative",bottom:"125px"}}/>
-          </div>
+    {screen !==false  &&
+     <Carousel showThumbs={false} className="carosal" autoPlay={true} showStatus={false} showIndicators={false} interval={500}>
+     <div className="cI">
+     <img src="a.png" width="200px" height="200px" id="ci"/>
+     <img src="galler-2.png"  width="200px" height="200px" id="ci"/>
+     <img src="b.png"  width="200px" height="200px" id="ci"/>
+     <img src="c.png"  width="200px" height="200px" id="ci"/>
+     <img src="d.png" width="200px" height="200px" id="ci"/>
+     </div>
+
+     <div className="cI">
+     <img src="gallery-1.png" width="200px" height="200px" id="ci"/>
+     <img src="d.png" width="200px" height="200px" id="ci"/>
+     <img src="e.png" width="200px" height="200px" id="ci"/>
+     <img src="f.png" width="200px" height="200px" id="ci"/>
+     <img src="g.png" width="200px" height="200px" id="ci"/>
+     </div>
+     
+     </Carousel>
+    }
+    {screen==false &&
+    <div className="falseImage">
+    
+    <img src="a.png"  id="cd"/>
+    <img src="galler-2.png" id="cd" />
+    <img src="b.png" id="cd"/>
+    <img src="c.png"  id="cd"/>
+    <img src="d.png" id="cd"/>
+    
+
+    
+    <img src="gallery-1.png" id="cd" />
+    <img src="d.png" id="cd"/>
+    <img src="e.png"  id="cd"/>
+    <img src="f.png" id="cd"/>
+    <img src="g.png" id="cd"/>
+   
+    </div>
+
+    }
+     
           
          
           

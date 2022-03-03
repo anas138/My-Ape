@@ -6,6 +6,7 @@
 }
 body{
   font-family: "veener";
+  overflow-x: hidden;
   
   
 }
@@ -207,6 +208,7 @@ width: 30px;
   justify-content: flex-end;
   padding-right: 90px;
   height: 125vh;
+  overflow-y: hidden;
  
   
 }
@@ -239,12 +241,23 @@ width: 30px;
   flex-direction: column;
   
   
+  
+  
+}
+.carosal{
+  margin-bottom: 30px;
 }
 
 .images img {
   
   margin: 10px;
 
+}
+.cI{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 .navButton{
   background-color: rgb(185, 21, 21);
@@ -358,14 +371,7 @@ width: 30px;
 
 
 @media all and (max-width: 900px) {
-.FAQ{
-  background-image: url("../public/faq-bg.png") no-repeat center center fixed;
- 
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    width: 100%;
-}
+
 
   .wrapper{
     background-image: url("../public//banner.jpg") no-repeat center center fixed;
@@ -428,15 +434,17 @@ width: 30px;
   .headerlogo{
     margin-right: 20px;
   }
-  .FAQ{
-    height: 150vh !important;
-    
-  }
+ 
 
   .images{
     background-color: black;
     
+    
+    
 
+  }
+  .carosal{
+    width: 100%;
   }
   
   .images img {
@@ -444,20 +452,22 @@ width: 30px;
     
     top: 10px !important;
   }
+  #ci{
+    height: 150px !important;
+    width: 150px !important;
+  }
     
   
   
 }
+
 @media all and (max-width: 500px){
 
-
-  .FAQ{
-    background-image: url("../public/faq-bg.png") no-repeat center center fixed;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-      width: 100%;
+  #ci{
+    height: 100px !important;
+    width: 100px !important;
   }
+  
   .wrapper{
     
       background-image: url("../public//banner.jpg") no-repeat center center fixed;
@@ -526,22 +536,8 @@ width: 30px;
     margin-bottom: 20px;
   }
 
-  .FAQ{
-    background-image: url("../public/faq-bg.png") no-repeat center center fixed;
-   
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-      width: 100%;
-  }
-  .FAQ{
-    background-image: url("../public/faq-bg.png") no-repeat center center fixed;
-    
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-      width: 100%;
-  }
+  
+  
   .wrapper{
     width: 400px;
     height: 500px;
@@ -594,12 +590,24 @@ width: 30px;
     height: 150vh !important;
     
   }
+  #ci{
+    height: 150px !important;
+    width: 150px !important;
+  }
+  .teamMembers img{
+    height: 50px;
+    width: 70px;
+ }
+ 
 
 
 }
 @media all and (max-width: 1300px){
 
-  
+  #ci{
+    height: 150px !important;
+    width: 150px !important;
+  }
   .FAQ{
     height: 150vh !important;
     
@@ -671,15 +679,12 @@ width: 30px;
      margin: 10px !important;
    }
    
-   .images div img {
-    width: 80% !important ;
-    height: 80% !important;
-    margin: 10px 0px !important;
+   
     
  
     
     
-   }
+   
    .FAQ{
      margin-left:0px !important;
    }
@@ -738,6 +743,18 @@ width: 30px;
   margin: 5px !important;
 }
 
+
+#ci{
+  width: 5px !important;
+  height: 5px !important;
+}
+
+#cd{
+  height: 80% !important;
+  width: 80% !important;
+  margin-top: 10px !important;
+}
+
 }
 
 
@@ -748,9 +765,46 @@ width: 30px;
   #gimage{
     bottom: 125px ;
   }
+  .carosal{
+    width: 100%;
+  }
 }
 
+@media all and (min-width: 1161px){
+  .carosal{
+    width: 100%;
+  }
 
+}
+
+@media all and (max-width: 750px){
+  #ci{
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+}
+
+@media all and (max-width: 750px){
+  #ci{
+    height: 70px !important;
+    width: 70px !important;
+  }
+
+}
+
+@media all and(max-width:375){
+  .falseImage{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  }
+  #cd{
+    height: 80% !important;
+    width: 80% !important;
+  }
+}
 
 
 
