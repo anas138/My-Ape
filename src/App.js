@@ -80,19 +80,19 @@ function App() {
     {screen !==false  &&
      <Carousel showThumbs={false} className="carosal" autoPlay={true} showStatus={false} showIndicators={false} interval={500}>
      <div className="cI">
-     <img src="a.png" width="200px" height="200px" id="ci"/>
-     <img src="galler-2.png"  width="200px" height="200px" id="ci"/>
-     <img src="b.png"  width="200px" height="200px" id="ci"/>
-     <img src="c.png"  width="200px" height="200px" id="ci"/>
-     <img src="d.png" width="200px" height="200px" id="ci"/>
+     <img src="a.png" width="200px" height="250px" id="ci"/>
+     <img src="galler-2.png"  width="200px" height="250px" id="ci"/>
+     <img src="b.png"  width="200px" height="250px" id="ci"/>
+     <img src="c.png"  width="200px" height="250px" id="ci"/>
+     <img src="d.png" width="200px" height="250px" id="ci"/>
      </div>
 
      <div className="cI">
-     <img src="gallery-1.png" width="200px" height="200px" id="ci"/>
-     <img src="d.png" width="200px" height="200px" id="ci"/>
-     <img src="e.png" width="200px" height="200px" id="ci"/>
-     <img src="f.png" width="200px" height="200px" id="ci"/>
-     <img src="g.png" width="200px" height="200px" id="ci"/>
+     <img src="gallery-1.png" width="200px" height="250px" id="ci"/>
+     <img src="d.png" width="200px" height="250px" id="ci"/>
+     <img src="e.png" width="200px" height="250px" id="ci"/>
+     <img src="f.png" width="200px" height="250px" id="ci"/>
+     <img src="g.png" width="200px" height="250px" id="ci"/>
      </div>
      
      </Carousel>
@@ -250,7 +250,7 @@ function App() {
         <div className="faq-text">
            <span className="h2">FAQ</span>
            
-           <div onClick={()=>{questiClick(1)}}>Q : WHAT IS THE TOTALAMOUNT OF NFTS IN THE EVIL APE CLUB COLLECTION? {index==1 && answer==true?     <FaSortUp />: <FaSortDown /> }</div> 
+           <div onClick={()=>{questiClick(1)}}>Q : WHAT IS THE TOTAL AMOUNT OF NFTS IN THE EVIL APE CLUB COLLECTION? {index==1 && answer==true?     <FaSortUp />: <FaSortDown /> }</div> 
            <div className={`${(answer==true && index==1)?'answerVisible':"anewers"}`}  data-aos="fade-down"   data-aos-easing="ease-in-sine">A : THERE ARE 6969 UNIQUE EVIL APES</div>
            
            <div onClick={()=>{questiClick(2)}} >Q : HOW MUCH IS IT TO MINT? {index==2 && answer==true?<FaSortUp/>:<FaSortDown/>}</div>
@@ -259,7 +259,7 @@ function App() {
            
 
            <div onClick={()=>{questiClick(3)}}>Q : HOW MUCH WILL EACH EVIL APE COST TO MINT ? {index==3 && answer==true?<FaSortUp/>:<FaSortDown/>}</div>
-           <div className={`${(answer==true && index==3)?'answerVisible':"anewers"}`}  data-aos="fade-down"   data-aos-easing="ease-in-sine"> A : Our Whitelist presale mint starts <br/> March 12, 2022 at 12:00 noon EST and last <br/>for 24 hours. Our public sale <br/>starts the following<br/> day March 13, 2022 at 12:00 noon EST.</div>
+           <div className={`${(answer==true && index==3)?'answerVisible':"anewers"}`}  data-aos="fade-down"   data-aos-easing="ease-in-sine"> A : Our Whitelist presale mint starts <br/> March 12, 2022 at 10 AM EST and last <br/>for 24 hours. Our public sale <br/>starts the following<br/> day March 13, 2022 at 10 AM EST.</div>
            
            <div onClick={()=>{questiClick(4)}}>Q : Where can I view my Evil Ape Club NFT ? {index==4 && answer==true?<FaSortUp/>:<FaSortDown/>} </div>
            <div  className={`${(answer==true && index==4)?'answerVisible':"anewers"}`}  data-aos="fade-down"   data-aos-easing="ease-in-sine">A : After a successful mint, <br/>you can view your EVIL APE on OpenSea.<br/> by connecting your wallet.</div>
